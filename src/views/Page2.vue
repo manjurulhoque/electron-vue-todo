@@ -1,3 +1,40 @@
 <template>
-	<h4>You are second page.</h4>
+  <div>
+    <div class="vx-row mb-6">
+      <div class="vx-col w-full">
+        <vs-input class="w-full" label="Title" v-model="title" />
+      </div>
+    </div>
+    <div class="vx-row mb-6">
+      <div class="vx-col w-full">
+        <datepicker placeholder="Select Date" v-model="date"></datepicker>
+      </div>
+    </div>
+    <div class="vx-row">
+      <div class="vx-col w-full">
+        <vs-button class="mr-3 mb-2" @click="add">Submit</vs-button>
+      </div>
+    </div>
+  </div>
 </template>
+
+<script>
+import Datepicker from "vuejs-datepicker";
+
+export default {
+  data() {
+    return {
+      date: null,
+      title: ""
+    };
+  },
+  components: {
+    Datepicker
+  },
+  methods: {
+    add() {
+      alert("Add");
+    }
+  }
+};
+</script>

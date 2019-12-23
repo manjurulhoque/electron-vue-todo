@@ -1,0 +1,11 @@
+Firstly:
+
+npm install electron-rebuild
+
+then try this several times:
+
+./node_modules/.bin/electron-rebuild -w sqlite3 -p
+
+https://stackoverflow.com/a/39463304
+
+https://github.com/nodejs/node-gyp#on-windows
