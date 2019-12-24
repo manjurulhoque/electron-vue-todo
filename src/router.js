@@ -37,7 +37,7 @@ const router = new Router({
                 {
                     path: "/add",
                     name: "add",
-                    component: () => import("./views/Page2.vue")
+                    component: () => import("./views/Insert.vue")
                 }
             ]
         },
